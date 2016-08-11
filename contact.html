@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Contact</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header class="nav-bar">
-		<h1>Godfrey Best</h1>
-		<h6>About</h6>
-		<h6>Portfolio</h6>
-		<h6>Contact</h6>
+	<header class="nav">
+		<a href="index.html"><h1>Godfrey Best</h1></a>
+		<div class="tiny-heads">
+			<a href="contact.html"><h6>Contact</h6></a>
+			<a href="portfolio.html"><h6>Portfolio</h6></a>
+			<a href="index.html"><h6>About</h6></a>
+		</div>
 	</header>
+	<hr>
 	<div class="main">
 		<div class="main-contact">
-			<h2>Contact</h2>
-			<hr>
 			<form id="contact-form">
+				<h2>Contact</h2>
+				<hr class="hr-main">
 				Name <br/>
-				<input type="text" name="contact_name">
+				<input type="text" name="contact_name" id="name_input" placeholder="  Name">
 				<br/>
 				Email <br/>
-				<input type="text" name="email">
+				<input type="text" name="email" id="email_input" placeholder="  example@gmail.com">
 				<br/>
 				Message <br/>
-				<textarea name="message" cols="30" rows="20"></textarea>
+				<textarea name="message" cols="30" rows="10" id="message_input"></textarea>
 				<br/>
-				<input type="submit" name="submit-contact">
+				<input type="submit" name="submit-contact" id="submit_button">
 			</form>
 		</div>
 		<div class="connect">
 			<h3>Connect with Me</h3>
-			<hr id="connect-hr">
-			<div id="connect-icons">
-				<img src="" alt="Github">
-				<img src="" alt="LinkedIn">
-				<img src="" alt="StackOverflow">
+			<hr class="connect-hr">
+			<div class="connect-icons">
+				<img src="assets/images/github-128.png" alt="Github" class="icon">
+				<img src="assets/images/linkedin-128.png" alt="LinkedIn" class="icon">
+				<img src="assets/images/stackoverflow-128.png" alt="StackOverflow" class="icon">
 			</div>
 		</div>
-		<footer class="footer">
-			<hr id="footer-hr">
-			<p>Copyright 2016 Godfrey Best</p>
-		</footer>
 	</div>
+	<footer>
+		<div class="footer">
+			<div class="footer-hr">
+				<!-- Empty Div to use for the blue bar -->
+			</div>
+			<p class="footer-p">Copyright 2016 Godfrey Best</p>
+		</div>
+	</footer>
 </body>
 </html>
